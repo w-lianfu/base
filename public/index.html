@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="renderer" content="webkit" />
+    <meta name="google" content="notranslate" />
+    <meta name="description" content="base" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+    <title>Base</title>
+    <!-- https://fonts.google.com/specimen/LXGW+WenKai+Mono+TC -->
+    <link rel="icon" type="image/png" href="/maple-leaf.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
+    <!-- viewerjs css -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.7/viewer.css" /> -->
+    <!-- animate.css -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+  </head>
+
+  <body>
+    <section id="root"></section>
+    <section id="loading"></section>
+    <section id="lock"></section>
+    <section id="portal"></section>
+
+    <script>
+      console.log('client width -- ', document.documentElement.clientWidth);
+      console.log('client height -- ', document.documentElement.clientHeight);
+
+      /* rem字体自适应 */
+      (function (doc, win) {
+        var docEl = doc.documentElement;
+        var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+        function recalc () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+
+          // iPad Mini以下的屏幕按照手机模式展示
+          // iPad Mini以上的屏幕按照PC模式展示
+          if (clientWidth <= 390) {
+            docEl.style.fontSize = '10px';
+          } else if (clientWidth > 390 && clientWidth <= 768) {
+            // docEl.style.fontSize = 15 * (clientWidth / 750) + 'px';
+            docEl.style.fontSize = '11px';
+          } else if (clientWidth > 768 && clientWidth <= 1920) {
+            // 2K以内分辨率
+            docEl.style.fontSize = '10px';
+          } else {
+            // 2K及以上分辨率
+            docEl.style.fontSize = '11px';
+          }
+        };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(document, window);
+    </script>
+
+  </body>
+</html>
