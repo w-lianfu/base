@@ -6,7 +6,9 @@
   "scripts": {
     "build": "rsbuild build",
     "dev": "rsbuild dev --open",
-    "lint": "eslint . --flag unstable_ts_config && bunx tsc -b",
+    "eslint": "eslint . --flag unstable_ts_config && bunx tsc -b",
+    "stylelint": "bunx stylelint '**/*.scss'",
+    "lint": "bun run eslint && bun run stylelint",
     "preview": "rsbuild preview",
     "prepare": "husky"
   },
@@ -40,6 +42,7 @@
     "@eslint/js": "^9.35.0",
     "@rsbuild/core": "^1.5.14",
     "@rsbuild/plugin-react": "^1.4.1",
+    "@rsbuild/plugin-sass": "^1.4.0",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.1",
     "animate.css": "^4.1.1",
@@ -48,7 +51,10 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
     "husky": "^9.1.7",
+    "postcss-scss": "^4.0.9",
     "react-toastify": "^11.0.5",
+    "sass": "^1.93.2",
+    "stylelint-scss": "^6.12.1",
     "two.js": "^0.8.21",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.43.0"
