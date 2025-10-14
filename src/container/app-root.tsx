@@ -1,5 +1,8 @@
 import { useEffect } from 'react';
 
+import AppTheme from './app-theme';
+import AppRouter from './app-router';
+
 interface IProps {}
 
 const AppRoot = (props: IProps) => {
@@ -8,9 +11,9 @@ const AppRoot = (props: IProps) => {
   }, []);
 
   return (
-    <section>
-      <p>app root</p>
-    </section>
+    <AppTheme>
+      <AppRouter />
+    </AppTheme>
   );
 };
 

@@ -1,16 +1,22 @@
-import { useEffect } from 'react';
+import { useEffect, type ReactNode } from 'react';
+import { ThemeProvider } from '@mui/material';
 
-interface IProps {}
+import DarkTheme from '@theme/dark-theme';
+import LightTheme from '@theme/light-theme';
+
+interface IProps {
+  children?: ReactNode,
+}
 
 const AppTheme = (props: IProps) => {
+  const { children } = props;
+
   useEffect(() => {
     return () => {};
   }, []);
 
   return (
-    <section>
-      <p>app theme</p>
-    </section>
+    <ThemeProvider theme={DarkTheme}>{children}</ThemeProvider>
   );
 };
 

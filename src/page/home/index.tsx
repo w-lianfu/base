@@ -9,7 +9,9 @@ const Home = (props: IProps) => {
 
   return (
     <section>
-      <p>Home Page</p>
+      <p>~~~ Home Page ~~~</p>
+      <p>~~~ Home Page ~~~</p>
+      <p>~~~ Home Page ~~~</p>
     </section>
   );
 };

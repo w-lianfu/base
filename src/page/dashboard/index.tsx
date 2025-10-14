@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Paper } from '@mui/material';
 
 interface IProps {}
 
@@ -8,14 +9,14 @@ const Dashboard = (props: IProps) => {
   }, []);
 
   return (
-    <section>
+    <Paper>
       <p>------ Dashboard Page ------</p>
       <p>------ Dashboard Page ------</p>
       <p>------ Dashboard Page ------</p>
       <p>------ Dashboard Page ------</p>
       <p>------ Dashboard Page ------</p>
       <p>------ Dashboard Page ------</p>
-    </section>
+    </Paper>
   );
 };
 
