@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 
+import './index.scss';
+
 interface IProps {}
 
 const AppStatus = (props: IProps) => {
@@ -8,9 +10,7 @@ const AppStatus = (props: IProps) => {
   }, []);
 
   return (
-    <section>
-      <p>app status</p>
-    </section>
+    <p className="app-status" />
   );
 };
 

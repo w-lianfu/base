@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 
+import './index.scss';
+
 interface IProps {}
 
 const AppTop = (props: IProps) => {
@@ -8,9 +10,7 @@ const AppTop = (props: IProps) => {
   }, []);
 
   return (
-    <section>
-      <p>app-top</p>
-    </section>
+    <p className="app-top" />
   );
 };
 

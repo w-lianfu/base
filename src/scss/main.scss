@@ -41,5 +41,5 @@ body {
 
 ::selection {
   @include white(1);
-  @include secondary-bg(1);
+  @include primary-bg(1);
 }
