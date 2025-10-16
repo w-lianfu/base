@@ -7,6 +7,7 @@ import { Paper, Button } from '@mui/material';
 
 import './scss/index.scss';
 import Home from '@page/home/index';
+import Footer from '@comp/footer/index';
 
 interface IProps {}
 
@@ -37,6 +38,7 @@ const Dashboard = (props: IProps) => {
         <p><Button variant="outlined" color="success">上海 - 上海 - 上海</Button></p>
         <p><Button variant="outlined" color="info">上海 - 上海 - 上海</Button></p>
       </Paper>
+      <Footer />
     </Paper>
   );
 };

@@ -9,6 +9,7 @@ const Color = {
   white: (opacity = 1) => `rgba(250, 250, 250, ${opacity})`,
   copper: (opacity = 1) => `rgba(255, 219, 1, ${opacity})`,
   gray: (opacity = 1) => `rgba(97, 97, 97, ${opacity})`,
+  borderColor: (opacity = 1) => `rgba(235, 235, 235, ${opacity})`,
 };
 
 export default Color;
