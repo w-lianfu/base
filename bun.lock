@@ -13,6 +13,7 @@
         "chart.js": "^4.5.0",
         "consola": "^3.4.2",
         "date-fns": "^4.1.0",
+        "immutable": "^5.1.4",
         "localforage": "^1.10.0",
         "mathjs": "^15.0.0",
         "mobx": "^6.15.0",
@@ -34,6 +35,7 @@
         "@rsbuild/core": "^1.5.14",
         "@rsbuild/plugin-react": "^1.4.1",
         "@rsbuild/plugin-sass": "^1.4.0",
+        "@tauri-apps/cli": "^2.8.4",
         "@types/react": "^19.2.2",
         "@types/react-dom": "^19.2.1",
         "animate.css": "^4.1.1",
@@ -43,9 +45,11 @@
         "globals": "^16.3.0",
         "husky": "^9.1.7",
         "postcss-scss": "^4.0.9",
+        "react-icons": "^5.5.0",
         "react-toastify": "^11.0.5",
         "sass": "^1.93.2",
         "stylelint-scss": "^6.12.1",
+        "three": "^0.180.0",
         "two.js": "^0.8.21",
         "typescript": "^5.9.3",
         "typescript-eslint": "^8.43.0",
@@ -302,6 +306,30 @@
     "@svta/common-media-library": ["@svta/common-media-library@0.12.4", "", {}, "sha512-9EuOoaNmz7JrfGwjsrD9SxF9otU5TNMnbLu1yU4BeLK0W5cDxVXXR58Z89q9u2AnHjIctscjMTYdlqQ1gojTuw=="],
 
     "@swc/helpers": ["@swc/helpers@0.5.17", "", { "dependencies": { "tslib": "^2.8.0" } }, "sha512-5IKx/Y13RsYd+sauPb2x+U/xZikHjolzfuDgTAl/Tdf3Q8rslRvC19NKDLgAJQ6wsqADk10ntlv08nPFw/gO/A=="],
+
+    "@tauri-apps/cli": ["@tauri-apps/cli@2.8.4", "", { "optionalDependencies": { "@tauri-apps/cli-darwin-arm64": "2.8.4", "@tauri-apps/cli-darwin-x64": "2.8.4", "@tauri-apps/cli-linux-arm-gnueabihf": "2.8.4", "@tauri-apps/cli-linux-arm64-gnu": "2.8.4", "@tauri-apps/cli-linux-arm64-musl": "2.8.4", "@tauri-apps/cli-linux-riscv64-gnu": "2.8.4", "@tauri-apps/cli-linux-x64-gnu": "2.8.4", "@tauri-apps/cli-linux-x64-musl": "2.8.4", "@tauri-apps/cli-win32-arm64-msvc": "2.8.4", "@tauri-apps/cli-win32-ia32-msvc": "2.8.4", "@tauri-apps/cli-win32-x64-msvc": "2.8.4" }, "bin": { "tauri": "tauri.js" } }, "sha512-ejUZBzuQRcjFV+v/gdj/DcbyX/6T4unZQjMSBZwLzP/CymEjKcc2+Fc8xTORThebHDUvqoXMdsCZt8r+hyN15g=="],
+
+    "@tauri-apps/cli-darwin-arm64": ["@tauri-apps/cli-darwin-arm64@2.8.4", "", { "os": "darwin", "cpu": "arm64" }, "sha512-BKu8HRkYV01SMTa7r4fLx+wjgtRK8Vep7lmBdHDioP6b8XH3q2KgsAyPWfEZaZIkZ2LY4SqqGARaE9oilNe0oA=="],
+
+    "@tauri-apps/cli-darwin-x64": ["@tauri-apps/cli-darwin-x64@2.8.4", "", { "os": "darwin", "cpu": "x64" }, "sha512-imb9PfSd/7G6VAO7v1bQ2A3ZH4NOCbhGJFLchxzepGcXf9NKkfun157JH9mko29K6sqAwuJ88qtzbKCbWJTH9g=="],
+
+    "@tauri-apps/cli-linux-arm-gnueabihf": ["@tauri-apps/cli-linux-arm-gnueabihf@2.8.4", "", { "os": "linux", "cpu": "arm" }, "sha512-Ml215UnDdl7/fpOrF1CNovym/KjtUbCuPgrcZ4IhqUCnhZdXuphud/JT3E8X97Y03TZ40Sjz8raXYI2ET0exzw=="],
+
+    "@tauri-apps/cli-linux-arm64-gnu": ["@tauri-apps/cli-linux-arm64-gnu@2.8.4", "", { "os": "linux", "cpu": "arm64" }, "sha512-pbcgBpMyI90C83CxE5REZ9ODyIlmmAPkkJXtV398X3SgZEIYy5TACYqlyyv2z5yKgD8F8WH4/2fek7+jH+ZXAw=="],
+
+    "@tauri-apps/cli-linux-arm64-musl": ["@tauri-apps/cli-linux-arm64-musl@2.8.4", "", { "os": "linux", "cpu": "arm64" }, "sha512-zumFeaU1Ws5Ay872FTyIm7z8kfzEHu8NcIn8M6TxbJs0a7GRV21KBdpW1zNj2qy7HynnpQCqjAYXTUUmm9JAOw=="],
+
+    "@tauri-apps/cli-linux-riscv64-gnu": ["@tauri-apps/cli-linux-riscv64-gnu@2.8.4", "", { "os": "linux", "cpu": "none" }, "sha512-qiqbB3Zz6IyO201f+1ojxLj65WYj8mixL5cOMo63nlg8CIzsP23cPYUrx1YaDPsCLszKZo7tVs14pc7BWf+/aQ=="],
+
+    "@tauri-apps/cli-linux-x64-gnu": ["@tauri-apps/cli-linux-x64-gnu@2.8.4", "", { "os": "linux", "cpu": "x64" }, "sha512-TaqaDd9Oy6k45Hotx3pOf+pkbsxLaApv4rGd9mLuRM1k6YS/aw81YrsMryYPThrxrScEIUcmNIHaHsLiU4GMkw=="],
+
+    "@tauri-apps/cli-linux-x64-musl": ["@tauri-apps/cli-linux-x64-musl@2.8.4", "", { "os": "linux", "cpu": "x64" }, "sha512-ot9STAwyezN8w+bBHZ+bqSQIJ0qPZFlz/AyscpGqB/JnJQVDFQcRDmUPFEaAtt2UUHSWzN3GoTJ5ypqLBp2WQA=="],
+
+    "@tauri-apps/cli-win32-arm64-msvc": ["@tauri-apps/cli-win32-arm64-msvc@2.8.4", "", { "os": "win32", "cpu": "arm64" }, "sha512-+2aJ/g90dhLiOLFSD1PbElXX3SoMdpO7HFPAZB+xot3CWlAZD1tReUFy7xe0L5GAR16ZmrxpIDM9v9gn5xRy/w=="],
+
+    "@tauri-apps/cli-win32-ia32-msvc": ["@tauri-apps/cli-win32-ia32-msvc@2.8.4", "", { "os": "win32", "cpu": "ia32" }, "sha512-yj7WDxkL1t9Uzr2gufQ1Hl7hrHuFKTNEOyascbc109EoiAqCp0tgZ2IykQqOZmZOHU884UAWI1pVMqBhS/BfhA=="],
+
+    "@tauri-apps/cli-win32-x64-msvc": ["@tauri-apps/cli-win32-x64-msvc@2.8.4", "", { "os": "win32", "cpu": "x64" }, "sha512-XuvGB4ehBdd7QhMZ9qbj/8icGEatDuBNxyYHbLKsTYh90ggUlPa/AtaqcC1Fo69lGkTmq9BOKrs1aWSi7xDonA=="],
 
     "@tybys/wasm-util": ["@tybys/wasm-util@0.10.1", "", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg=="],
 
@@ -577,7 +605,7 @@
 
     "immediate": ["immediate@3.0.6", "", {}, "sha512-XXOFtyqDjNDAQxVfYxuF7g9Il/IbWmmlQg2MYKOH8ExIT1qg6xc4zyS3HaEEATgs1btfzxq15ciUiY7gjSXRGQ=="],
 
-    "immutable": ["immutable@5.1.3", "", {}, "sha512-+chQdDfvscSF1SJqv2gn4SRO2ZyS3xL3r7IW/wWEEzrzLisnOlKiQu5ytC/BVNcS15C39WT2Hg/bjKjDMcu+zg=="],
+    "immutable": ["immutable@5.1.4", "", {}, "sha512-p6u1bG3YSnINT5RQmx/yRZBpenIl30kVxkTLDyHLIMk0gict704Q9n+thfDI7lTRm9vXdDYutVzXhzcThxTnXA=="],
 
     "import-fresh": ["import-fresh@3.3.1", "", { "dependencies": { "parent-module": "^1.0.0", "resolve-from": "^4.0.0" } }, "sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ=="],
 
@@ -753,6 +781,8 @@
 
     "react-dom": ["react-dom@19.2.0", "", { "dependencies": { "scheduler": "^0.27.0" }, "peerDependencies": { "react": "^19.2.0" } }, "sha512-UlbRu4cAiGaIewkPyiRGJk0imDN2T3JjieT6spoL2UeSf5od4n5LB/mQ4ejmxhCFT1tYe8IvaFulzynWovsEFQ=="],
 
+    "react-icons": ["react-icons@5.5.0", "", { "peerDependencies": { "react": "*" } }, "sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw=="],
+
     "react-is": ["react-is@19.2.0", "", {}, "sha512-x3Ax3kNSMIIkyVYhWPyO09bu0uttcAIoecO/um/rKGQ4EltYWVYtyiGkS/3xMynrbVQdS69Jhlv8FXUEZehlzA=="],
 
     "react-player": ["react-player@3.3.3", "", { "dependencies": { "@mux/mux-player-react": "^3.6.0", "cloudflare-video-element": "^1.3.4", "dash-video-element": "^0.2.0", "hls-video-element": "^1.5.8", "spotify-audio-element": "^1.0.3", "tiktok-video-element": "^0.1.1", "twitch-video-element": "^0.1.4", "vimeo-video-element": "^1.5.5", "wistia-video-element": "^1.3.4", "youtube-video-element": "^1.6.2" }, "peerDependencies": { "@types/react": "^17.0.0 || ^18 || ^19", "react": "^17.0.2 || ^18 || ^19", "react-dom": "^17.0.2 || ^18 || ^19" } }, "sha512-6U2ziVohA3WLdKI/WEQ7v27CIive0TCNIro55lJZka06fjB2kC4lJqBrvddG0yBvTDcn1owiUf2hRNaIzHAjIg=="],
@@ -883,6 +913,8 @@
 
     "table": ["table@6.9.0", "", { "dependencies": { "ajv": "^8.0.1", "lodash.truncate": "^4.4.2", "slice-ansi": "^4.0.0", "string-width": "^4.2.3", "strip-ansi": "^6.0.1" } }, "sha512-9kY+CygyYM6j02t5YFHbNz2FN5QmYGv9zAjVp4lCDjlCw7amdckXlEt/bjMhUIfj4ThGRE4gCUH5+yGnNuPo5A=="],
 
+    "three": ["three@0.180.0", "", {}, "sha512-o+qycAMZrh+TsE01GqWUxUIKR1AL0S8pq7zDkYOQw8GqfX8b8VoCKYUoHbhiX5j+7hr8XsuHDVU6+gkQJQKg9w=="],
+
     "tiktok-video-element": ["tiktok-video-element@0.1.1", "", {}, "sha512-BaiVzvNz2UXDKTdSrXzrNf4q6Ecc+/utYUh7zdEu2jzYcJVDoqYbVfUl0bCfMoOeeAqg28vD/yN63Y3E9jOrlA=="],
 
     "tiny-emitter": ["tiny-emitter@2.1.0", "", {}, "sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q=="],
@@ -1000,6 +1032,10 @@
     "player.style/media-chrome": ["media-chrome@4.13.1", "", { "dependencies": { "ce-la-react": "^0.3.0" } }, "sha512-jPPwYrFkM4ky27/xNYEeyRPOBC7qvru4Oydy7vQHMHplXLQJmjtcauhlLPvG0O5kkYFEaOBXv5zGYes/UxOoVw=="],
 
     "prop-types/react-is": ["react-is@16.13.1", "", {}, "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="],
+
+    "sass/immutable": ["immutable@5.1.3", "", {}, "sha512-+chQdDfvscSF1SJqv2gn4SRO2ZyS3xL3r7IW/wWEEzrzLisnOlKiQu5ytC/BVNcS15C39WT2Hg/bjKjDMcu+zg=="],
+
+    "sass-embedded/immutable": ["immutable@5.1.3", "", {}, "sha512-+chQdDfvscSF1SJqv2gn4SRO2ZyS3xL3r7IW/wWEEzrzLisnOlKiQu5ytC/BVNcS15C39WT2Hg/bjKjDMcu+zg=="],
 
     "styled-components/@emotion/is-prop-valid": ["@emotion/is-prop-valid@1.2.2", "", { "dependencies": { "@emotion/memoize": "^0.8.1" } }, "sha512-uNsoYd37AFmaCdXlg6EYD1KaPOaRWRByMCYzbKUX4+hhMfrxdVSelShywL4JVaAeM/eHUOSprYBQls+/neX3pw=="],
 

@@ -15,11 +15,15 @@ const Home = (props: IProps) => {
     <Paper className="home-page">
       <p>
         <Link to="/">
-          <Button variant="contained" color="info">to Dashboard Page</Button>
+          <Button variant="dashed" color="primary">to Dashboard Page</Button>
         </Link>
       </p>
-      <p>~~~ Home Page ~~~</p>
-      <p>~~~ Home Page ~~~</p>
+      <p><Button variant="dashed" color="secondary">上海 - 上海 - 上海</Button></p>
+      <p><Button variant="dashed" color="error">上海 - 上海 - 上海</Button></p>
+      <p><Button variant="dashed" color="warning">St Petersburg - St Petersburg</Button></p>
+      <p><Button variant="dashed" color="success">上海 - 上海 - 上海</Button></p>
+      <p><Button variant="dashed" color="info">上海 - 上海 - 上海</Button></p>
+      <p><Button variant="contained" disabled={true}>上海 - 上海 - 上海</Button></p>
     </Paper>
   );
 };
